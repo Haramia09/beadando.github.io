@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 255, 0.8); /* Increase blue glowing effect */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* Increase blue glowing effect on hover */
+}
+
+#hero {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 150px 20px; /* Increase padding */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px; /* Increase max-width */
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hero-content .btn:hover {
+    background-color: #e65c00;
+    box-shadow: 0 0 25px rgba(0, 0, 255, 1); /* Increase blue glowing effect on hover */
+    transform: translateY(-5px); /* Add slide effect on hover */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1; /* Ensure image is behind the content */
+}
+
+.hero-image .stripe {
+    flex: 1;
+    background-image: url('about-us.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slideUp 1s ease-in-out forwards;
+    margin: 0; /* Remove space between stripes */
+}
+
+.hero-image .stripe:nth-child(1) {
+    clip-path: inset(0 87.5% 0 0);
+    animation-delay: 0.1s;
+}
+
+.hero-image .stripe:nth-child(2) {
+    clip-path: inset(0 75% 0 12.5%);
+    animation-delay: 0.2s;
+}
+
+.hero-image .stripe:nth-child(3) {
+    clip-path: inset(0 62.5% 0 25%);
+    animation-delay: 0.3s;
+}
+
+.hero-image .stripe:nth-child(4) {
+    clip-path: inset(0 50% 0 37.5%);
+    animation-delay: 0.4s;
+}
+
+.hero-image .stripe:nth-child(5) {
+    clip-path: inset(0 37.5% 0 50%);
+    animation-delay: 0.5s;
+}
+
+.hero-image .stripe:nth-child(6) {
+    clip-path: inset(0 25% 0 62.5%);
+    animation-delay: 0.6s;
+}
+
+.hero-image .stripe:nth-child(7) {
+    clip-path: inset(0 12.5% 0 75%);
+    animation-delay: 0.7s;
+}
+
+.hero-image .stripe:nth-child(8) {
+    clip-path: inset(0 0 0 87.5%);
+    animation-delay: 0.8s;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    padding: 3rem; /* Increase padding */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    color: #003366;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003366;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#velemenyek, #kapcsolat {
+    padding: 3rem; /* Increase padding */
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#velemenyek h2, #kapcsolat h2 {
+    color: #003366;
+}
+
+#velemenyek p, #kapcsolat p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#rolunk {
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 150px 20px; /* Increase padding */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.rolunk-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px; /* Increase max-width */
+    margin: 0 auto;
+}
+
+.rolunk-image {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rolunk-image .stripe {
+    flex: 1;
+    background-image: url('about-us.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+.rolunk-image .stripe:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.rolunk-image .stripe:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.rolunk-image .stripe:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.rolunk-image .stripe:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content {
+        padding: 80px 10px;
+        font-size: 16px;
+    }
+    main {
+        padding: 2rem;
+    }
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tr:hover {
+    background-color: #d0e0ff;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #45A049;
+}
+
